@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TripRapi – Itinerary Wisata Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f7fb;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #1e88e5, #43a047);
+      color: #fff;
+      padding: 70px 20px 60px;
+      text-align: center;
+    }
+    header img { width: 120px; margin-bottom: 15px; }
+    header h1 { font-size: 42px; margin: 0; }
+    header p { font-size: 18px; opacity: 0.95; }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    nav a { text-decoration: none; font-weight: 600; color: #1e88e5; }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+      animation: fadeUp 1s ease;
+    }
+    h2 { color: #1e88e5; margin-bottom: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform .3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card h3 { color: #43a047; margin-top: 0; }
+    .cta {
+      background: linear-gradient(135deg, #1e88e5, #43a047);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .cta a {
+      background: #fff;
+      color: #1e88e5;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+    footer {
+      background: #1c2833;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-triprapi.png" alt="Logo TripRapi" style="width:120px; margin-bottom:15px;" />
+  <h1>TripRapi</h1>
+  <p>Liburan Jadi Lebih Rapi dengan Itinerary Wisata Digital</p>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang</a>
+  <a href="#fitur">Fitur</a>
+  <a href="#paket">Paket</a>
+  <a href="#kontak">Kontak</a>
+  <a href="https://shopee.co.id/triprapi" target="_blank">Shopee</a>
+</nav>
+
+<section id="tentang">
+  <h2>Tentang TripRapi</h2>
+  <p>
+    TripRapi adalah platform itinerary wisata digital yang membantu wisatawan
+    merencanakan perjalanan secara rapi, efisien, dan praktis. Kami menyediakan
+    itinerary siap pakai maupun custom sesuai destinasi, durasi, dan preferensi
+    perjalanan Anda.
+  </p>
+</section>
+
+<section id="fitur">
+  <h2>Fitur Unggulan</h2>
+  <div class="grid">
+    <div class="card"><h3>Itinerary Rapi</h3><p>Rencana perjalanan harian tersusun jelas & mudah diikuti.</p></div>
+    <div class="card"><h3>Custom Trip</h3><p>Sesuaikan destinasi, durasi, dan gaya liburan.</p></div>
+    <div class="card"><h3>Format PDF</h3><p>Itinerary bisa diunduh & dibuka kapan saja.</p></div>
+    <div class="card"><h3>Respon Cepat</h3><p>Konsultasi langsung via WhatsApp Business.</p></div>
+  </div>
+</section>
+
+<section id="paket">
+  <h2>Paket Layanan</h2>
+  <div class="packages">
+    <div class="card">
+      <h3>Gratis</h3>
+      <p>• Itinerary dasar<br>• Destinasi populer</p>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p>• Itinerary custom<br>• Rekomendasi detail<br>• Konsultasi</p>
+    </div>
+    <div class="card">
+      <h3>Custom Group</h3>
+      <p>• Rombongan<br>• Keluarga<br>• Komunitas</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="kontak">
+  <h2>Pesan Itinerary Sekarang</h2>
+  <p>Liburan lebih rapi bersama TripRapi</p>
+  <a href="https://wa.me/628xxxxxxxxx" target="_blank">WhatsApp</a>
+  <a href="https://instagram.com/triprapi" target="_blank">Instagram</a>
+  <a href="https://shopee.co.id/triprapi" target="_blank">Shopee</a>
+</section>
+
+<footer>
+  <p>© 2025 TripRapi | Itinerary Wisata Digital</p>
+</footer>
+
+</body>
+</html>
